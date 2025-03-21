@@ -1,0 +1,91 @@
+/* 헤더 스타일 */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    transition: 1s;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    top: -55px;
+    height: 55px;
+}
+
+.headerDown{
+    top: 0;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+header nav > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav > a:hover {
+    color: #007bff;
+}
+
+header .collapse{
+    
+    position: absolute;
+    right: 30px;
+    top: 100%;
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 0 10px;
+    border-radius: 0 0 7px 7px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 5px 13px;
+}
+header .collapse::after{
+    content:"";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-image: url(../img/svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.turn::after{
+    transform: rotate(180deg);
+}

@@ -1,0 +1,82 @@
+/* #title 전체 타이틀 섹션 스타일 */
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8; /* 배경색 설정 */
+    height: 100%;
+}
+#title>div{
+    
+    width: 100%;
+    height: 100%;
+}
+
+/* #title ul 리스트 스타일 */
+#title ul {
+    /*! display: flex; */
+    /*! flex-direction: column; */
+    /*! gap: 20px; */ /* 요소 간 간격 */
+    /*! padding: 0; */
+    /*! list-style-type: none; */
+}
+
+#title ul .slick-prev{
+    z-index: 1;
+}
+#title ul .slick-next{
+    right: 45px;
+}
+#title ul .slick-prev::before, #title ul .slick-next::{
+    
+}
+/* #title ul li.flex-column-center 개별 타이틀 요소 */
+#title ul li.flex-column-center {
+     /* 부드러운 그림자 효과 */
+    height: 100vh;
+}
+#title ul li{
+    
+    height: 100%;
+}
+#title ul li.ani{
+    
+    background-image: url(https://images.unsplash.com/photo-1586785096421-54bc44db585f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#title ul li.ani1{
+    
+}
+#title .slick-dots{
+    
+    bottom: 80px;
+}
+
+/* #title ul li h2 타이틀 제목 */
+#title ul li h2 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #fff; /* 어두운 색으로 설정 */
+    margin-bottom: 10px;
+}
+
+/* #title ul li p 타이틀 설명 */
+#title ul li p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff; /* 부드러운 텍스트 색상 */
+    line-height: 1.6;
+}
+
+/* 반응형 디자인: 모바일에서 제목 크기 조정 */
+@media (max-width: 768px) {
+    #title ul li h2 {
+        font-size: 1.2rem;
+    }
+
+    #title ul li p {
+        font-size: 0.9rem;
+    }
+}

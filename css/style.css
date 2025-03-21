@@ -1,0 +1,213 @@
+/* 구글폰트 */
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 레이아웃 스타일링 */
+section{
+  height: 100vh;
+  
+  /*! height: 850px; */
+}
+.wrap{
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+.flex{
+  display: flex;
+}
+.flex-between{
+  justify-content: space-between;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-center{
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+nav a{
+  display: block;
+}
+
+/* 텍스트 스타일링 */
+.h1{
+  font-size: 66px;
+  font-weight: bold;
+}
+.h2{
+  font-size: 54px;
+}
+.h3{
+  font-size: 35px;
+}
+.h4{
+  font-size: 25px;
+}
+.h5{
+  font-size: 20px;
+}
+.h6{
+  font-size: 14px;
+}
+.menu{
+  font-size: 18px;
+}
+.submenu{
+  font-size: 16px;
+}
+titlep{
+  font-size: 20px;
+}
+.p{
+  font-size: 18px;
+  /*! color: white; */
+}
+.m{
+  font-size: 16px;
+}
+.sm{
+  font-size: 14px;
+}
+.xs{
+  font-size: 12px;
+}
+/* 칼라 */
+.black, black a{
+}
+.white,.white a{
+  color: black;
+}
+.gray{
+  color: #76787a;
+}
+
+/* 버튼 */
+.btm16{
+  font-size: 16px;  
+}
+.hide{
+  display: none !important;
+}
+.more{
+  border: 1px solid #fff;
+  line-height: 1px;
+  padding: 17px 28px;
+  color: white;
+}
+.more::after{
+  content: "+";
+  margin-left: 10px;
+  transition: 0.5s;
+  position: relative;
+  left: 0px;
+}
+.more:hover::after{
+  left: 10px;
+}
+.more:hover{
+  background-color: white;
+  color: black; 
+}
+
+.hi{
+  display: none !important;
+}
+/* 아이콘 */
+.LSicon::before{
+  content: "";
+  display: block;
+  width: 37px;
+  height: 30px;
+  background-image: url(../img/lsicon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* 버튼스타일 */
+.btm{
+  width: fit-content;
+  padding: 0 20px;
+  border: 2px solid white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  gap: 20px;
+}
+.btms::after{
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+  /*! background-color: #999; */
+  background-image: url(../img/png/right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg);
+}
+
+/* 모바일 */
+@media screen and (max-width:768px){
+  .section{
+    height: calc(100vh - 100px);
+  }
+  .wrap{
+    padding: 0px 35px;
+  }
+/*  모바일 텍스트 사이즈  */
+  .h1{
+    font-size: calc(66px * 0.404);
+    text-align: center;
+  }
+  .h2{
+    font-size: 54px;
+  }
+  .h3{
+    font-size: 30px;
+  }
+  .h4{
+    font-size: 25px;
+  }
+  .h5{
+    font-size: 17px;
+  }
+  .h6{
+    font-size: 14px;
+  }
+  .menu{
+    font-size: 15px;
+  }
+  .submenu{
+    font-size: 16px;
+  }
+  .titlep{
+    font-size: 12px;
+  }
+  .p{
+  font-size: 16px;
+  /*! text-align: center; */
+  }
+  .m{
+    font-size: 16px;
+  }
+  .sm{
+    font-size: 15px;
+  }
+  .xs{
+    font-size: 12px;
+  }
+  .block{
+    display: block;
+  }
+}
